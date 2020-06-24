@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["es6"],
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "outDir": "dist"
+  },
+  "include": [
+    "./scripts",
+    "./src/*.ts",
+    "./test/*.ts",
+    "./src/**/*.ts",
+    "./test/**/*.ts"
+],
+  "files": [
+    "./buidler.config.ts",
+    "./node_modules/@nomiclabs/buidler-web3/src/type-extensions.d.ts",
+    "./node_modules/@nomiclabs/buidler-truffle5/src/type-extensions.d.ts",
+    "./node_modules/buidler-gas-reporter/src/type-extensions.d.ts",
+    "./node_modules/truffle-typings/index.d.ts",
+    "./types/truffle-contracts/index.d.ts"
+  ]
+}
