@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "prettier": "prettier --write **/*.sol",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "generate-types": "typechain --target=truffle-v5 'artifacts/*.json'"
+    "test": "npx buidler test",
+    "generate-types": "npx typechain --target=truffle-v5 'artifacts/*.json'",
+    "postinstall": "npx buidler compile && npm generate-types"
   },
-  "postinstall": "npx buidler compile && npm generate-types",
   "author": "Shaleen Jain <shaleen@jain.sh>",
   "license": "ISC",
   "devDependencies": {
